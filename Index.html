@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Dana Gordillo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        /* Estilos del Header Original */
+        header {
+            padding: 50px 20px;
+            background-color: #100662;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        h1 {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            border-right: .15em solid #7126bb;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #7126bb,
+                0 0 20px #7126bb,
+                0 0 40px #7126bb;
+            animation:
+                typing 3.5s steps(35, end),
+                blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #7126bb; }
+        }
+        
+        /* Contenedor Principal Ajustado */
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 900px; /* Ajuste para que el archivo no ocupe toda la pantalla de extremo a extremo */
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Estructura de Tarjeta Simplificada */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(13, 104, 202, 0.1);
+            border-left: 6px solid #7126bb;
+            margin-top: 20px;
+            text-align: left;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .card:hover {
+            transform: scale(1.03); 
+            box-shadow: 0 10px 25px rgba(113, 38, 187, 0.2); 
+        }
+
+        /* Ajustes automáticos para PDFs y Videos */
+        iframe {
+            border: none;
+            display: block;
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        video {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 9px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            outline: none;
+        }
+        
+        /* Estilos del Footer Original */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 2px solid rgb(113, 38, 187);
+            background-color: aqua;
+            font-weight: bold;
+        }
+        footer img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: pointer;
+        }
+        footer img:hover {
+            transform: scale(1.25); 
+            filter: brightness(1.1); 
+        }
+        
+        /* Responsividad para móviles */
+        @media (max-width: 600px) {
+            footer {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+    
+    <main>
+        <!-- SEMANA 1: EJEMPLO CON PDF -->
+        <div class="card">
+            <h3>S1 Introducción a Arduino</h3>
+            <p>Arduino es una plataforma de código abierto que está basada en hardware y software.</p>
+            <!-- Solo cambias la ruta en el src -->
+            <iframe src="Recursos/IntroducciónArduinoCRISTY.pdf" target="_blank"></iframe>
+        </div>
+
+        <!-- SEMANA 2: EJEMPLO CON VIDEO -->
+        <div class="card">
+            <h3>S2 Circuito 2</h3>
+            <p>Demostración del circuito 2.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <div class="card">
+            <h3>S3 Circuito 3</h3>
+            <p>Demostración del circuito 3.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h3>S4 Circuito 4</h3>
+            <p>Demostración del circuito 4.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito4.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h3>S5 Circuito 5</h3>
+            <p>Demostración del circuito 5.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito5.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h3>S6 Circuito 6</h3>
+            <p>Demostración del circuito 6.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h3>S7 Circuito 7</h3>
+            <p>Demostración del circuito 7.</p>
+            <video controls>
+                <source src="Recursos/videos/Circuito7.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h3>S8 Suficiencia</h3>
+            <p>Circuito suficiencia</p>
+            <video controls>
+                <source src="Recursos/videos/SufiU3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+    
+    <footer>
+        <span>@cristysss</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="25" width="100" alt="Logo Colegio">
+    </footer>
+</body>
+</html>
